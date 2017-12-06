@@ -465,9 +465,10 @@ Bundle 'Django-Projects'
 """"""set for go start
 Plugin 'fatih/vim-go'
 Bundle 'elgris/hint'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'majutsushi/tagbar'
-Bundle 'scrooloose/nerdtree'
+Plugin 'YouCompleteMe'
+Plugin 'tagbar'
+"Plugin 'majutsushi/tagbar'
+"Bundle 'scrooloose/nerdtree'
 Bundle 'dgryski/vim-godef'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
