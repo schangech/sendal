@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Application
+Name=Sublime_text
+Comment=Eclipse Integrated Development Environment
+Icon=/usr/local/sublime_text_3/Icon/128x128/sublime-text.png
+Exec=bash -c "LD_PRELOAD=/usr/local/sublime_text_3/libsublime-imfix.so exec /usr/local/sublime_text_3/sublime_text %F"
+# Exec=/usr/local/sublime_text_3/sublime_text %F
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true
+
+[Desktop Action Window]
+Name=New Window
+Exec=bash -c "LD_PRELOAD=/usr/local/sublime_text_3/libsublime-imfix.so exec /usr/local/sublime_text_3/sublime_text -n"
+
+[Desktop Action Document]
+Name=New File
+Exec=bash -c "LD_PRELOAD=/usr/local/sublime_text_3/libsublime-imfix.so exec /usr/local/sublime_text_3/sublime_text --command new_file"
