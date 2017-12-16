@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Idea
+Comment=Idea Integrated Development Environment
+Icon=/usr/local/idea-IU-172.4343.14/bin/idea.png
+Exec=/usr/local/idea-IU-172.4343.14/bin/idea.sh
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true

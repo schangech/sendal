@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=PyCharm
+Comment=PyCharm Integrated Development Environment
+Icon=/usr/local/pycharm-2017.2.3/bin/pycharm.png
+Exec=/usr/local/pycharm-2017.2.3/bin/pycharm.sh
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true

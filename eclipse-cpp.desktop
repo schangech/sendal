@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Eclipse-cpp
+Comment=Eclipse Integrated Development Environment
+Icon=/usr/local/eclipse-cpp/icon.xpm
+Exec=/usr/local/eclipse-cpp/eclipse
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true
