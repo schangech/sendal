@@ -1,0 +1,46 @@
+[user]
+	email = suqirui@rongcapital.cn
+	name = QiRUi.Su
+[anaconda-ks]
+	cfg = oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm
+[alias]
+    #co = checkout
+    #ci = commit -v
+    #br = branch
+    #st = status
+    lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    #cm = "!sh -c "refspec=`git symbolic-ref HEAD 2>/dev/null | sed "s#refs/heads/##"`;git commit -em \"[\${refspec}]\"""
+    cm = "!sh -c \"refspec=`git symbolic-ref HEAD 2>/dev/null | sed \"s#refs/heads/##\"`;git commit -em \\\"[\\${refspec}]\\\"\""
+	unstage = reset HEAD
+	last = log -1
+
+    aa = add --all
+    bv = branch -vv
+    ba = branch -ra
+    bd = branch -d
+    ca = commit --amend
+    cb = checkout -b
+    # cm = commit -a --amend -C HEAD
+    ci = commit -a -v
+    co = checkout
+    di = diff
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    mm = merge --no-ff
+    st = status --short --branch
+    tg = tag -a 
+    pu = push --tags
+    un = reset --hard HEAD  
+    uh = reset --hard HEAD^
+
+[core]  
+    editor = vi 
+[color]  
+    diff = auto  
+    status = auto  
+    branch = auto 
+[branch]  
+    autosetuprebase = always
+[push]
+    default = simple

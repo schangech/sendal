@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=GoLand
+Comment=GoLand Integrated Development Environment
+Icon=/usr/local/goland/bin/goland.png
+Exec=/usr/local/goland/bin/goland.sh
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true

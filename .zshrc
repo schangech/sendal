@@ -10,6 +10,13 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
 
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -52,10 +59,12 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# plugins=(
+#   git
+# )
 plugins=(git zsh-syntax-highlighting branch-manage)
 
-# source $ZSH/oh-my-zsh.sh
-source /home/sendal/.oh-my-zsh/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -85,17 +94,20 @@ source /home/sendal/.oh-my-zsh/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# sftp
+#
+alias rc-jumper="ssh -p 1024 suqirui@jumper.dataengine.com -A"
+alias rc-wlan-sftp="sftp -P 1196 suqirui@sftp.dataengine.com"
+alias rc-lan-sftp="sftp -P 1196 suqirui@sftp.in.dataengine.com"
+# sftp -oPort=1196 suqirui@sftp.in.dataengine.com
 
 # new zsh
 DEFAULT_USER=sendal
 
 
 # java
-# JAVA_HOME=/usr/local/jdk1.8.0_144
-# CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
-# PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
+JAVA_HOME=/usr/local/jdk904
+CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
+PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 
 # golang enviroment
 export GOROOT="/usr/local/go"
@@ -115,8 +127,11 @@ ssh-add /home/sendal/.ssh/suqirui
 
 # virtual env
 WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /home/sendal/.local/bin/virtualenvwrapper.sh
 
 
 # auto env
 source ~/.autoenv/activate.sh
+
+# oracle go dev
+export PKG_CONFIG_PATH=/home/sendal/
