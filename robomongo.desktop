@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Robomongo
+Comment=Robomongo Integrated Development Environment
+Icon=/usr/local/robomongo/robomongo-0.9.0-rc4-linux-x86_64-8c830b6/bin/robomongo.png
+Exec=/usr/local/robomongo/robomongo-0.9.0-rc4-linux-x86_64-8c830b6/bin/robomongo
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true
