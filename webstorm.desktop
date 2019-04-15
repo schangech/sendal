@@ -2,8 +2,8 @@
 Type=Application
 Name=Webstorm
 Comment=Webstorm Integrated Development Environment
-Icon=/usr/local/WebStorm-172.4155.35/bin/webstorm.svg
-Exec=/usr/local/WebStorm-172.4155.35/bin/webstorm.sh
+Icon=/usr/local/webstorm/bin/webstorm.svg
+Exec=/usr/local/webstorm/bin/webstorm.sh
 Terminal=false
 Categories=Development;IDE;Java;
 StartupNotify=true

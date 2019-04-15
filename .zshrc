@@ -95,40 +95,36 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-alias rc-jumper="ssh -p 1024 suqirui@jumper.dataengine.com -A"
-alias rc-wlan-sftp="sftp -P 1196 suqirui@sftp.dataengine.com"
-alias rc-lan-sftp="sftp -P 1196 suqirui@sftp.in.dataengine.com"
+alias jumper="ssh -p 2222 suqirui@go.hualala.com -A"
+alias rc-wlan-sftp="sftp -P 2222 suqirui@ftp.hualala.com"
 # sftp -oPort=1196 suqirui@sftp.in.dataengine.com
 
 # new zsh
 DEFAULT_USER=sendal
 
-
 # java
-JAVA_HOME=/usr/local/jdk904
+JAVA_HOME=/usr/local/jdk
 CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
 PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 
 # golang enviroment
-export GOROOT="/usr/local/go"
-export GOBIN=$GOROOT/bin
-export GOARCH="amd64"
-export GOOS="linux"
-export GOPATH="/home/sendal/workstation/goworkstation/go"
-export PATH=.:$PATH:$GOBIN
+# export GOROOT="/usr/local/go"
+# export GOBIN=$GOROOT/bin
+# export GOARCH="amd64"
+# export GOOS="linux"
+# export GOPATH="/home/sendal/workstation/goworkstation/go"
+# export PATH=.:$PATH:$GOBIN
 
 # python
 PIP_REQUIRE_VIRTUALENV=true
 
 # key
-ssh-add /home/sendal/.ssh/devops_for_openstack_vms
 ssh-add /home/sendal/.ssh/id_pub
 ssh-add /home/sendal/.ssh/suqirui
 
 # virtual env
 WORKON_HOME=$HOME/.virtualenvs
 source /home/sendal/.local/bin/virtualenvwrapper.sh
-
 
 # auto env
 source ~/.autoenv/activate.sh

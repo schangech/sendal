@@ -1,8 +1,8 @@
 [user]
-	email = suqirui@rongcapital.cn
-	name = QiRUi.Su
+    email = suqirui@hualala.com
+    name = suqirui
 [anaconda-ks]
-	cfg = oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm
+    cfg = oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm
 [alias]
     #co = checkout
     #ci = commit -v
@@ -11,8 +11,8 @@
     lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
     #cm = "!sh -c "refspec=`git symbolic-ref HEAD 2>/dev/null | sed "s#refs/heads/##"`;git commit -em \"[\${refspec}]\"""
     cm = "!sh -c \"refspec=`git symbolic-ref HEAD 2>/dev/null | sed \"s#refs/heads/##\"`;git commit -em \\\"[\\${refspec}]\\\"\""
-	unstage = reset HEAD
-	last = log -1
+    unstage = reset HEAD
+    last = log -1
 
     aa = add --all
     bv = branch -vv
