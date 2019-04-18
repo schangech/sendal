@@ -5,13 +5,19 @@ Beijing
 https://github.com/lyfeyaj/sublime-text-imfix
 
 ### ubuntu ss
+```bash
 sudo add-apt-repository ppa:hzwhuang/ss-qt5
 sudo apt-get update
 sudo apt-get install shadowsocks-qt5
+```
 
 ### global ss
+```bash
 sudo apt-get install proxychains
 ```
+
+
+```bash
 socks5    127.0.0.1    1080
 
 strict_chain
