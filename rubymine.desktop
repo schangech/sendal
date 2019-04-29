@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=RubyMine
+Comment=RubyMine Integrated Development Environment
+Icon=/usr/local/rubymine/bin/rubymine.png
+Exec=/usr/local/rubymine/bin/rubymine.sh
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true

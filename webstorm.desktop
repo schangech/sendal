@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Webstorm
-Comment=Webstorm Integrated Development Environment
-Icon=/usr/local/webstorm/bin/webstorm.svg
+Name=WebStorm
+Comment=WebStorm Integrated Development Environment
+Icon=/usr/local/webstorm/bin/webstorm.png
 Exec=/usr/local/webstorm/bin/webstorm.sh
 Terminal=false
 Categories=Development;IDE;Java;

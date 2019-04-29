@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Clion
+Comment=Clion Integrated Development Environment
+Icon=/usr/local/clion/bin/clion.png
+Exec=/usr/local/clion/bin/clion.sh
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true

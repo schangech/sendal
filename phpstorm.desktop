@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=PhpStorm
+Comment=PhoStorm Integrated Development Environment
+Icon=/usr/local/phpstorm/bin/phpstorm.png
+Exec=/usr/local/phpstorm/bin/phpstorm.sh
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true

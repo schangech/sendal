@@ -523,7 +523,8 @@ Bundle 'Django-Projects'
 """"""set for go start
 Plugin 'fatih/vim-go'
 Bundle 'elgris/hint'
-Plugin 'YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+"Plugin 'YouCompleteMe'
 Plugin 'tagbar'
 "Plugin 'majutsushi/tagbar'
 "Bundle 'scrooloose/nerdtree'
@@ -608,4 +609,7 @@ let g:tagbar_type_go = {
 nmap <F8> :TagbarToggle<CR>
 nmap <C-n> :NERDTreeToggle<CR>
 
+syntax enable
+set background=dark
+colorscheme solarized
 
