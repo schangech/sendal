@@ -32,3 +32,27 @@ quiet_mode
 socks5  127.0.0.1 1080
 
 ```
+
+# install zsh
+1. sudo apt-get install fonts-powerline
+2. https://github.com/robbyrussell/oh-my-zsh
+3. cp .zshrc ~
+
+# install git flow
+sudo apt install git-flow
+
+# vim bunder plugin manager
+https://github.com/VundleVim/Vundle.vim
+
+sudo apt install build-essential cmake python3-dev
+
+# color schema
+1. mkdir ~/.vim/colors
+2. cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
+
+# YouCompleteMe
+1. sudo apt install build-essential cmake python3-dev
+2. ./install.py --clang-completer
+3. ref: https://github.com/Valloric/YouCompleteMe#linux-64-bit
+
+
