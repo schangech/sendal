@@ -62,7 +62,15 @@ ZSH_THEME="agnoster"
 # plugins=(
 #   git
 # )
-plugins=(git zsh-syntax-highlighting branch-manage)
+plugins=(
+    # rails
+    git
+    autojump
+    colored-man-pages
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    # branch-manage
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,8 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-alias jumper="ssh -p 2222 suqirui@go.hualala.com -A"
-alias rc-wlan-sftp="sftp -P 2222 suqirui@ftp.hualala.com"
+alias hll_jumper="ssh -p 2222 suqirui@go.hualala.com -A"
+alias hll_sftp="sftp -P 2222 suqirui@ftp.hualala.com"
 # sftp -oPort=1196 suqirui@sftp.in.dataengine.com
 
 # new zsh
@@ -108,26 +116,28 @@ CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
 PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 
 # golang enviroment
-# export GOROOT="/usr/local/go"
-# export GOBIN=$GOROOT/bin
-# export GOARCH="amd64"
-# export GOOS="linux"
-# export GOPATH="/home/sendal/workstation/goworkstation/go"
-# export PATH=.:$PATH:$GOBIN
+export GOROOT="/usr/local/go"
+export GOBIN=$GOROOT/bin
+export GOARCH="amd64"
+export GOOS="linux"
+export GOPATH="/home/sendal/workstation/goworkstation/go"
+export PATH=.:$PATH:$GOBIN
 
 # python
 PIP_REQUIRE_VIRTUALENV=true
 
 # key
-ssh-add /home/sendal/.ssh/id_pub
+ssh-add /home/sendal/.ssh/id_rsa
 ssh-add /home/sendal/.ssh/suqirui
 
 # virtual env
 WORKON_HOME=$HOME/.virtualenvs
 source /home/sendal/.local/bin/virtualenvwrapper.sh
 
-# auto env
-source ~/.autoenv/activate.sh
-
 # oracle go dev
 export PKG_CONFIG_PATH=/home/sendal/
+
+# autoenv --> direnv
+# auto env
+# source ~/.autoenv/activate.sh
+eval "$(direnv hook zsh)"

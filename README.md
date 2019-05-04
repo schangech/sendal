@@ -55,4 +55,7 @@ sudo apt install build-essential cmake python3-dev
 2. ./install.py --clang-completer
 3. ref: https://github.com/Valloric/YouCompleteMe#linux-64-bit
 
+# python3
+sudo apt-get install zlib1g-dev
+sudo apt-get install libffi-dev
 
