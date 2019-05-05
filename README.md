@@ -62,3 +62,7 @@ sudo apt-get install libffi-dev
 # vim
 https://github.com/spf13/spf13-vim
 curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+
+# ubuntu top icons
+sudo apt-get install chrome-gnome-shell
+
