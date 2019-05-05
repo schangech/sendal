@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Postman
+Comment=Postman Integrated Development Environment
+Icon=/usr/local/phpstorm/bin/phpstorm.png
+Exec=/usr/local/Postman/Postman
+Terminal=false
+Categories=Development;IDE;Java;
+StartupNotify=true
