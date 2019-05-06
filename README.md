@@ -66,3 +66,8 @@ curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
 # ubuntu top icons
 sudo apt-get install chrome-gnome-shell
 
+# clean git cache
+git rm -r --cached conf/devops.toml or git rm -r --cached .
+git add .gitignore or git add .
+git commit -m "update gitignore"
+git push origin develop 
