@@ -141,3 +141,18 @@ export PKG_CONFIG_PATH=/home/sendal/
 # auto env
 # source ~/.autoenv/activate.sh
 eval "$(direnv hook zsh)"
+
+# global proxy
+# export http_proxy=http://127.0.0.1:8118
+# export https_proxy=http://127.0.0.1:8118
+# export ftp_proxy=http://127.0.0.1:8118
+alias proxy_global="export http_proxy=http://127.0.0.1:1080 && export https_proxy=http://127.0.0.1:1080 && export ftp_proxy=http://127.0.0.1:1080"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# history
+export HISTTIMEFORMAT="%d/%m/%y %T "
+
