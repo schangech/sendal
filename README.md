@@ -71,3 +71,12 @@ git rm -r --cached conf/devops.toml or git rm -r --cached .
 git add .gitignore or git add .
 git commit -m "update gitignore"
 git push origin develop 
+
+# clean remote branch 
+git branch -a
+
+git fetch -p 
+
+git remote show origin
+
+git remote prune origin
